@@ -1,8 +1,8 @@
-import { ShoppingCart } from './../models/shopping-cart';
-import { Order } from './../models/order';
-import { OrderService } from './../order.service';
+import { ShoppingCart } from '../shared/models/shopping-cart';
+import { Order } from '../shared/models/order';
+import { OrderService } from '../shared/services/order.service';
 import { Router } from '@angular/router';
-import { AuthService } from './../auth.service';
+import { AuthService } from '../shared/services/auth.service';
 import { Subscription } from 'rxjs/Subscription';
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { initDomAdapter } from '@angular/platform-browser/src/browser';
