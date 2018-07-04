@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,9 +17,9 @@ import { AdminProductsComponent } from './admin/components/admin-products/admin-
 import { ProductFormComponent } from './admin/components/product-form/product-form.component';
 import { AdminAuthGuard } from './admin/services/admin-auth-guard.service';
 import { AppComponent } from './app.component';
-import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
+import { BsNavbarComponent } from './core/components/bs-navbar/bs-navbar.component';
+import { HomeComponent } from './core/components/home/home.component';
+import { LoginComponent } from './core/components/login/login.component';
 import { AuthGuard } from './shared/services/auth-guard.service';
 import { SharedModule } from './shared/shared.module';
 import { CheckOutComponent } from './shopping/components/check-out/check-out.component';
@@ -30,13 +31,11 @@ import { ShoppingModule } from './shopping/shopping.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    BsNavbarComponent,
-    HomeComponent,
-    LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     SharedModule,
     AdminModule,
     ShoppingModule,

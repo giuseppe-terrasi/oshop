@@ -1,9 +1,9 @@
 import { Observable } from 'rxjs/Observable';
-import { AuthService } from '../shared/services/auth.service';
+import { AuthService } from '../../../shared/services/auth.service';
 import { Component, OnInit } from '@angular/core';
-import { Appuser } from '../shared/models/app-user';
-import { ShoppingCartService } from '../shared/services/shopping-cart.service';
-import { ShoppingCart } from '../shared/models/shopping-cart';
+import { Appuser } from '../../../shared/models/app-user';
+import { ShoppingCartService } from '../../../shared/services/shopping-cart.service';
+import { ShoppingCart } from '../../../shared/models/shopping-cart';
 
 @Component({
   // tslint:disable-next-line:component-selector
